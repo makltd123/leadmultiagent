@@ -1,0 +1,23 @@
+# Telegram sessions: full access to the account
+*.session
+*.session-journal
+
+# Secrets
+.env
+
+# Collected leads and logs: personal data of chat members
+*.db
+*.db-wal
+*.db-shm
+logs/
+
+# Chat lists from third-party catalogs
+tgstat_chats.txt
+chats_review.txt
+*.xlsx
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/

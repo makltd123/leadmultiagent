@@ -1,0 +1,10 @@
+pyrogram==2.0.106
+python-telegram-bot==22.0
+aiosqlite
+groq
+openai
+apscheduler
+python-dotenv
+beautifulsoup4
+requests
+aiohttp

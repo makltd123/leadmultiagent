@@ -1,0 +1,18 @@
+[Unit]
+Description=Telegram Lead Monitor
+After=network.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=YOUR_USERNAME
+WorkingDirectory=/path/to/project
+ExecStart=/path/to/project/venv/bin/python main.py
+Restart=always
+RestartSec=10
+StandardOutput=append:/path/to/project/logs/app.log
+StandardError=append:/path/to/project/logs/errors.log
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=multi-user.target
